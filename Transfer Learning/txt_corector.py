@@ -1,13 +1,13 @@
 import os
 
 # Dossier contenant les fichiers labels
-labels_dir = r"C:\Users\schwa\OneDrive\Bureau\5A\Transfer_Learning\Transfer Learning\valid\labels"  # Changez par le chemin vers vos labels (train/labels, valid/labels, etc.)
+labels_dir = "train/labels"  # Changez par le chemin vers vos labels (train/labels, valid/labels, etc.)
 
 # Correspondance entre anciennes classes et nouvelles indices
 class_mapping = {
-    0: 80,  # Ancien indice pour "can" -> Nouvel indice
-    1: 81,  # Ancien indice pour "snackbag" -> Nouvel indice
-    2: 82   # Ancien indice pour "waterbottle" -> Nouvel indice
+    80: 0,  # Ancien indice pour "can" -> Nouvel indice
+    81: 1,  # Ancien indice pour "snackbag" -> Nouvel indice
+    82: 2   # Ancien indice pour "waterbottle" -> Nouvel indice
 }
 
 # Parcourir tous les fichiers labels dans le dossier
